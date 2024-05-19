@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Mega Menu Design by Code4education</title> -->
+
+    <!-- Bootstrap 5 CDN Links -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <title>Responsive Hero Slider With Bootstrap 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom File's Link -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+    <header>
+
+     
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container ">
+              <a class="navbar-brand" href="index.html">
+                <img src="image/Logo.png" alt=""  >
+            </a>
+                
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-content">
+                    <i class="fas fa-stream text-black"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" >Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-auto">
+                        <div class="input-group">
+                            <input class="form-control border-0 mr-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn border-0" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="my-0">
+        <div class="container-fluid p-0">
+            <div id="carousel" class="carousel slide hero-slides" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active boat">
+                  <div class="container h-100 d-md-block">
+                    <div class="row align-items-center h-100">
+                      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="caption animated fadeIn">
+                          <h2 class="animated fadeInLeft">Boat Excursions</h2>
+                          <p class="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                          <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item sea">
+                  <div class="container h-100 d-md-block">
+                    <div class="row align-items-center h-100">
+                      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="caption animated fadeIn">
+                          <h2 class="animated fadeInLeft">Discover the canyon by the sea</h2>
+                          <p class="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                          <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item river">
+                  <div class="container h-100 d-md-block">
+                    <div class="row align-items-center h-100">
+                      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="caption animated fadeIn">
+                          <h2 class="animated fadeInLeft">Explore the river valley</h2>
+                          <p class="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                          <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section>
+      <footer class="footer-section">
+        <div class="container">
+          <div class="footer-cta py-5">
+            <div class="row">
+              <div class="col-sm-6 col-xl-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="cta-text">
+                    <h4>Find us</h4>
+                    <span>Shop 1 & 2, Kinara CHS, Mhatrewadi, Dahisar West, Mumbai 400068</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-phone"></i>
+                  <div class="cta-text">
+                    <h4>Call us</h4>
+                    <span>9769398104</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-envelope-open"></i>
+                  <div class="cta-text">
+                    <h4>Mail us</h4>
+                    <span>mumbai@ogeeconcern.in</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-content py-5">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a href="#"><img decoding="async" src="image/Logo.png" class="img-fluid"></a>
+                  </div>
+                  <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div class="footer-social-icon">
+                    <span>Follow us</span>
+                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                    <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-widget">
+                   <div class="footer-widget-heading">
+                     <h3>Useful Links</h3>
+                   </div>
+                   <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                    
+                  
+                   </ul>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-widget">
+                   <div class="footer-widget-heading">
+                     <h3>Subscribe</h3>
+                   </div>
+                    <div class="footer-text">
+                      <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                    </div>
+                    <div class="subscribe-form">
+                      <form action="#">
+                        <input type="text" placeholder="Email Address">
+                        <button><i class="fab fa-telegram-plane"></i></button>
+                      </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                <div class="copyright-text">
+                  <p>Copyright ©  All Right Reserved <a href="#">FakeSite</a></p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 text-right d-none d-lg-block">
+                <div class="footer-menu">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+     <!-- Footer section Start-->
+     <!-- <section class="footer_wrapper wrapper">
+      <div class="container">
+          <div class="row align-items-center mb-5">
+              <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 footer-logo">
+                  <img src="image/Logo.png" />
+              </div>
+              <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                  <h5><a href="#">+91 9769398104</a></h5>
+                  <h5><a href="#">mumbai@ogeeconcern.in</a></h5>
+                  <h5>www.ogeeconcern.in</h5>
+                  <h5>Shop 1 & 2, Kinara CHS, Mhatrewadi,<br>Dahisar West, Mumbai 400068</h5>
+              </div>
+              <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                  <ul class="link-widget p-0">
+                      <li><a href="#"><img src="./image/social-media/f.webp" /></a></li>
+                      <li><a href="#"><img src="./image/social-media/i.webp" /></a></li>
+                      <li><a href="#"><img src="./image/social-media/l.webp" /></a></li>
+                      <li><a href="#"><img src="./image/social-media/t.webp" /></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid pt-5 px-0">
+          <div class="row">
+              <div class="col-12">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14016.9363925419!2d77.18302375!3d28.5627323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1654846055849!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid copyright-section   ">
+        <p class="p-0">Copyright <a href="#">© All Rights Reserved.</a> FakeSite.</p>
+      </div>
+  </section> -->
+  <!-- Footer Section Exit  -->
+    <!-- <footer class="bg-dark p-4 text-white text-center">
+        <p class="p-0">Copyright <a href="#">© FakeSite.</a> All Rights Reserved</p>
+    </footer> -->
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
+</body>
+
+</html>
